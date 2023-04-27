@@ -19,6 +19,11 @@ namespace FirstAdminPanel.Areas.Admin.Controllers
             return View(sliders);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Create(Slider slider)
         {
